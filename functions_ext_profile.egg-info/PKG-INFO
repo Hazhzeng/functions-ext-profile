@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: functions-ext-profile
+Version: 1.0.0
+Summary: Azure Functions Extension Profile
+Home-page: https://github.com/Hazhzeng/functions-ext-profile
+Author: Roger Zeng
+Author-email: hazeng@microsoft.com
+License: MIT
+Description: UNKNOWN
+Keywords: azure azurefunctions python
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Environment :: Web Environment

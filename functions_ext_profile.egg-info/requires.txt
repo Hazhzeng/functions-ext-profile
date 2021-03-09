@@ -1,0 +1,2 @@
+azure-functions
+psutil==5.8.0
