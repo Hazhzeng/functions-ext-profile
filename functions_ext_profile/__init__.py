@@ -31,6 +31,6 @@ class ProfileExtension(FuncExtensionBase):
         io_read_bytes_end = counter.read_bytes
         io_write_bytes_end = counter.write_bytes
 
-        logger.info(f'{context.function_name} Stats: '
+        logger.warn(f'{context.function_name} Stats: '
                     f'[IO Read/Write Count {io_read_end - self.io_read_start}/{io_write_end - self.io_write_start}] '
                     f'[IO Read/Write Bytes {io_read_bytes_end - self.io_read_bytes_start}/{io_write_bytes_end - self.io_write_bytes_start}]')
