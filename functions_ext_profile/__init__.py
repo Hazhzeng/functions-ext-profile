@@ -1,5 +1,6 @@
 import os
 import gc
+from typing import Dict
 from psutil import Process
 from logging import Logger
 from azure.functions import FuncExtensionBase, Context
@@ -17,14 +18,14 @@ class ProfileExtension(FuncExtensionBase):
         self.io_read_bytes_start = None
         self.io_write_bytes_start = None
 
-    def before_invocation(self, logger: Logger, context: Context, *args, **kwargs) -> None:
+    def pre_invocation(self, logger: Logger, context: Context, func_args: Dict[str, object], *args, **kwargs) -> None:
         counter = self.process.io_counters()
         self.io_read_start = counter.read_count
         self.io_write_start = counter.write_count
         self.io_read_bytes_start = counter.read_bytes
         self.io_write_bytes_start = counter.write_bytes
 
-    def after_invocation(self, logger: Logger, context: Context, *args, **kwargs) -> None:
+    def post_invocation(self, logger: Logger, context: Context, func_args: Dict[str, object], func_ret: object,*args, **kwargs) -> None:
         counter = self.process.io_counters()
         io_read_end = counter.read_count
         io_write_end = counter.write_count

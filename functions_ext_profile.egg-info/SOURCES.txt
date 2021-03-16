@@ -1,7 +1,0 @@
-setup.py
-functions_ext_profile/__init__.py
-functions_ext_profile.egg-info/PKG-INFO
-functions_ext_profile.egg-info/SOURCES.txt
-functions_ext_profile.egg-info/dependency_links.txt
-functions_ext_profile.egg-info/requires.txt
-functions_ext_profile.egg-info/top_level.txt
